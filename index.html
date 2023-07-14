@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonley890 - Home</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: #ffffff;
+            margin: 0px;
+            background-color: #010514;
+            line-height: normal;
+        }
+
+        body a:link {
+            color: #1672c2;
+        }
+
+        body a:visited {
+            color: #228285;
+
+        }
+
+        body a:hover {
+            color: #ffffff;
+        }
+
+        body a:active {
+            color: chocolate;
+        }
+
+        .maintext {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            max-width: 1000px;
+            width: auto;
+            margin: auto;
+        }
+
+        header {
+            background: linear-gradient(to left, #228285, #1672c2);
+            padding: 20px;
+        }
+
+        .minorheader {
+            padding: 2px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        main {
+            padding: 20%;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #07142e;
+            padding: 5px;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .profile .name {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .profile .subtext {
+            font-size: 18px;
+            color: #888888;
+        }
+
+        .subprofile {
+            display: grid;
+            padding: 5%;
+            overflow: hidden;
+        }
+
+        .subprofile img {
+            width: 50px;
+            padding: 15%;
+        }
+
+        .video-example {
+            display: flex;
+            gap: 20px;
+        }
+
+        .video-example iframe {
+            width: 560px;
+            flex-basis: 1;
+            border: 0;
+        }
+
+        .video-example p {
+            flex: 1;
+            min-width: 30%;
+        }
+
+        .musiccollection {
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .musiccard {
+            margin: auto;
+            display: block;
+            text-align: center;
+            background-color: #07142e;
+            padding: 5%;
+            font-weight: bolder;
+            font-size: larger;
+            border-radius: 20px;
+            width: 80%;
+        }
+
+        .musiccard:hover {
+            background: linear-gradient(to left, #228285, #1672c2);
+        }
+
+        .musiccard img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .modcard {
+            display: inline-grid;
+            grid-template: "icon title" "icon description";
+            grid-template-areas: "icon title" "icon description";
+            grid-template-columns: min-content auto;
+            grid-template-rows: 20px auto;
+            padding: 10px;
+            gap: 10px;
+            width: calc(100% - 10px);
+            flex-wrap: nowrap;
+            background-color: #07142e;
+            border-radius: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .modcard:hover {
+            background: linear-gradient(to left, #228285, #1672c2);
+        }
+
+        .modcard img {
+            border-radius: 20px;
+            width: 100px;
+        }
+
+        .modcard p {
+            margin: 0px;
+        }
+
+        .joinbutton {
+            text-align: center;
+            display: table;
+            background: linear-gradient(to left, #228285, #1672c2);
+            border-radius: 10px;
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .joinbutton p {
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        .joinbutton a:link {
+            color: #ffffff;
+        }
+
+        .joinbutton a:visited {
+            color: #ffffff;
+        }
+
+        .joinbutton:hover {
+            background: chocolate;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .video-example {
+                display: table;
+            }
+
+            .video-example iframe {
+                width: 100%;
+            }
+
+            .video-example p {
+                min-width: auto;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .subprofile {
+                visibility: hidden;
+            }
+        }
+
+        .copy-icon {
+            display: inline-block;
+            margin: 2%;
+            width: 20px;
+            height: 20px;
+            background: center url("copy-icon.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: center;
+            cursor: pointer;
+            border: solid 2px transparent;
+            outline: 1px solid white;
+            border-radius: 3px;
+        }
+
+        footer {
+            background: #07142e;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #838383;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p style="margin: 0;">This page was last updated 06/21/2023</p>
+        </nav>
+    </header>
+
+    <main style="padding: 0;">
+        <div class="profile">
+            <div class="subprofile">
+                <a href="https://youtube.com/@BogTheMudWing" target="_blank"><img
+                        src="https://yt3.googleusercontent.com/4zWQws5XI8_hNF_NbZE453KN_Pf9A6Gu7877xAWRaoLamG-N60GlvRxKnpMWoTOYYudFLqUR_jU=s176-c-k-c0x00ffffff-no-rj"
+                        alt="Bog Profile Image"></a>
+                <a href="https://youtube.com/@StonleyFX" target="_blank"><img
+                        src="https://yt3.googleusercontent.com/HlGpTQQ1MD-SuC8YYw0NpWJSu8G8BlLYp2RxnxQSEmOiWvL2FZ5l_mZxJ-6Vaq3txzaBF0mjGow=s176-c-k-c0x00ffffff-no-rj"
+                        alt="StonleyFX Profile Image"></a>
+            </div>
+            <a href="https://www.youtube.com/@Stonley890" target="_blank"><img
+                    src="https://avatars.githubusercontent.com/u/79172597?v=4" alt="Main Profile Image"></a>
+            <div class="details">
+                <div class="name">Stonley890</div>
+                <div class="subtext">Bog The MudWing</div>
+                <hr>
+                <p style="margin: 0px; color: #cbcbcb;">Love to learn</p>
+            </div>
+            <div class="subprofile">
+                <a href="https://www.youtube.com/@waffleirons" target="_blank"><img
+                        src="https://yt3.googleusercontent.com/GZxr-UB8QYxPNNdOtzqI2cjjpOXOE8lUHHeGzFh0NVVkvdHHEQMiQJpxqM1x5kEyPjXVc_ApHI4=s176-c-k-c0x00ffffff-no-rj"
+                        alt="Waffle Irons Profile Image"></a>
+                <a href="https://www.youtube.com/@WingsofFire-TheNewWorld" target="_blank"><img
+                        src="https://yt3.googleusercontent.com/e8QNwBy43A6bj2nrCwOanp2I1FZ-bFxVQmEno9byFs49u6A9lqfAuvWRZzfq1a3HVUBA3wprng=s176-c-k-c0x00ffffff-no-rj"
+                        alt="Wings of Fire: The New World Profile Image"></a>
+            </div>
+        </div>
+
+        <header class="minorheader">
+            <h1>Hello!</h1>
+        </header>
+
+        <div class="maintext">
+            <p><b>I'm Stonley890 (also known as Bog The MudWing or just Bog). I am a beginner in Java
+                    and also have light experience with JavaScript, Python, and C#. I'm also an administrator on a small
+                    Minecraft community, enjoy composing and creating music, and manage videos on several YouTube
+                    channels.</b>
+            </p>
+            <p>I love to create, teach, and learn. All of these projects were developed in my free time out of my own
+                interest. All of my software projects are open source on <a
+                    href="https://github.com/stonley890" target="_blank">GitHub</a> and I welcome you to view them, take from them, and
+                improve them! My music is free to download from <a
+                    href="https://soundcloud.com/stonley890" target="_blank">SoundCloud</a> and can be used with no attribution on
+                YouTube videos.</p>
+        </div>
+
+        <header class="minorheader">
+            <h2>Video</h2>
+        </header>
+
+        <div class="maintext">
+
+            <a href="https://www.youtube.com/@Stonley890" target="_blank">
+                <h3>Stonley890</h3>
+            </a>
+            <div class="video-example">
+                <p>Stonley890 is my primary channel. It does not have a regular upload schedule or theme.
+                    It's mostly for unfocused videos that don't fit elsewhere.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/__GeZ7pILQs"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <a href="https://www.youtube.com/@BogTheMudWing" target="_blank">
+                <h3>Bog The MudWing</h3>
+            </a>
+            <div class="video-example">
+                <p>Bog The MudWing is a channel focused on the <i>Wings of Fire</i> book series by Tui T. Sutherland. It
+                    hovers more around a combination of <i>Wings of Fire</i> and Minecraft, but is ultimately most
+                    focused on the book series. A large part of the channel is the connection to <i>Wings of Fire: The
+                        New World</i>, a Minecraft server based on Wings of Fire that I help administrate.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_g8wGaz8AQU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <a href="https://www.youtube.com/@StonleyFX" target="_blank">
+                <h3>StonleyFX</h3>
+            </a>
+            <div class="video-example">
+                <p>Exploring the art, science, and effects of interactive entertainment; computers and video games!
+                    Nothing has been published to this channel yet, but I plan to produce content about games.</p>
+            </div>
+
+            <a href="https://www.youtube.com/@WaffleIrons" target="_blank">
+                <h3>Waffle Irons</h3>
+            </a>
+            <div class="video-example">
+                <p>Waffle Irons is a group channel where me and my friends often play multiplayer games. We are
+                    currently focused on the Hours SMP, a story-driven Minecraft SMP series. For the most part, I
+                    produce for the channel, though there are some videos which I had no hand in making.</p>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f2Av2nDr8WU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <a href="https://www.youtube.com/@WingsofFire-TheNewWorld" target="_blank">
+                <h3>Wings of Fire: The New World</h3>
+            </a>
+            <div class="video-example">
+                <p>The official YouTube channel for the Wings of Fire: The New World Minecraft server. I am an
+                    administrator on this server and much of the content (mostly event trailers) is produced my me. More
+                    about Wings of Fire: The New World is located below.</p>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iYTKLDFH6u0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+        <header class="minorheader">
+            <h2>Music</h2>
+        </header>
+
+
+        <div class="maintext">
+            <p>In addition to video, I love to play and create music! I'm a beginner with piano, can play a variety of
+                percussion instruments, and have choral training. I can read music and I can write it too! Over the past
+                few years, I've used GarageBand to compose and produce a number of songs that I have published through
+                DistroKid. Below are some of my favorites.</p>
+
+            <div class="musiccollection">
+                <a href="https://distrokid.com/hyperfollow/stonley890/iris" target="_blank">
+                    <div class="musiccard">
+                        <img
+                            src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F4977825--6385BEB9-9496-4E5E-AD5314041FAD4D56--0--482087--Iris.jpeg?fm=jpg&q=75&w=800&s=b8fc349bc541529e83b3ec5e4b80a8d5">
+                        <p>Iris</p>
+                    </div>
+                </a>
+                <a href="https://distrokid.com/hyperfollow/stonley890/nova" target="_blank">
+                    <div class="musiccard">
+                        <img
+                            src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F4977825--E3209AE3-F622-47C2-B0E8B2F221461B2C--0--245126--Nova.jpeg?fm=jpg&q=75&w=800&s=2d1e17ec74b3de03e89d0f390c1de0a3">
+                        <p>Nova</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="musiccollection">
+                <a href="https://distrokid.com/hyperfollow/stonley890/iris-scarlet" target="_blank">
+                    <div class="musiccard">
+                        <img
+                            src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F4977825--104F0F4F-F250-4518-9904A08EF92D2817--0--8970169--IrisScarlet.png?fm=jpg&q=75&w=800&s=81a84083bcd0407bd20c5d8f94e56fb9">
+                        <p>Iris (Scarlet)</p>
+                    </div>
+                </a>
+                <a href="https://distrokid.com/hyperfollow/stonley890/skyburn" target="_blank">
+                    <div class="musiccard">
+                        <img
+                            src="https://distrokid.imgix.net/http%3A%2F%2Fgather.fandalism.com%2F4977825--69978B76-EC03-4CB1-B3A3072052024136--0--9343055--Skyburn.png?fm=jpg&q=75&w=800&s=73599f8084dbc54533f9144f3c4c152f">
+                        <p>Skyburn</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <header class="minorheader">
+            <h2>Minecraft</h2>
+        </header>
+
+        <div class="maintext">
+            <p>Minecraft is one of my all-time favorite games. Throughout my time playing the game, I've also gained
+                experience with its built-in modding tools, resource packs and data packs. Minecraft is also what let me
+                to begin learning Java in order to create plugins for Spigot, a modified Minecraft server that provides
+                API access to the Minecraft server.</p>
+            <p>I am an administrator on a small Minecraft server called Wings of Fire: The New World, which is based on
+                Tui T. Sutherland's <i>Wings of Fire</i> series. My largest Java project is Dreamvisitor, an all-in-one
+                utility plugin for the server. However, I also have publicly available projects, most of which are
+                features extracted from Dreamvisitor. Below are some notable projects.</p>
+
+            <div>
+                <a href="https://modrinth.com/datapack/compass-tracker" target="_blank">
+                    <div class="modcard">
+                        <div style="grid-area: title;">
+                            <p><b>Compass Tracker</b></p>
+                        </div>
+                        <img src="https://cdn.modrinth.com/data/GvG2CaJa/5f606295694e45d67e75862366ae0a248933e702.png"
+                            style="grid-area: icon;">
+
+                        <div style="grid-area: description;">
+                            <p>A manhunt data pack that allows any number of hunters to track any number of runners in
+                                all
+                                three
+                                dimensions.</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="https://modrinth.com/plugin/no-creeper-craters" target="_blank">
+                    <div class="modcard">
+                        <div style="grid-area: title;">
+                            <p><b>No Creeper Craters</b></p>
+                        </div>
+                        <img src="https://cdn.modrinth.com/data/Lx7VcXLd/31c4f651788f76de5a6bd635452aeab86fdbdaea.png"
+                            style="grid-area: icon;">
+
+                        <div style="grid-area: description;">
+                            <p>A very lightweight plugin that prevents Creepers from breaking blocks.</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="https://modrinth.com/datapack/toasty" target="_blank">
+                    <div class="modcard">
+                        <div style="grid-area: title;">
+                            <p><b>Toasty!</b></p>
+                        </div>
+                        <img src="https://cdn.modrinth.com/data/oIehov5P/b359acfbcbfc0b0e27f90ce3b0b7765b5e0870b5.png"
+                            style="grid-area: icon;">
+
+                        <div style="grid-area: description;">
+                            <p>This data pack adds Toasty, a companion that will follow you throughout the world of
+                                Minecraft!</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="https://modrinth.com/plugin/pause-chat" target="_blank">
+                    <div class="modcard">
+                        <div style="grid-area: title;">
+                            <p><b>Pause Chat</b></p>
+                        </div>
+                        <img src="https://cdn.modrinth.com/data/a1i2EJjU/e653f9343b001f4a28bed16f02cec4134ee6e3f8.png"
+                            style="grid-area: icon;">
+
+                        <div style="grid-area: description;">
+                            <p>A Spigot plugin that temporarily (or permanently) disables Minecraft chat.</p>
+                        </div>
+
+                    </div>
+                </a>
+
+                <a href="https://modrinth.com/plugin/itemvoid" target="_blank">
+                    <div class="modcard">
+                        <div style="grid-area: title;">
+                            <p><b>ItemVoid</b></p>
+                        </div>
+                        <img src="https://cdn.modrinth.com/data/QR8nacp1/8b1f380d0a59c402a0e42f25db3bedff99921acd.png"
+                            style="grid-area: icon;">
+
+                        <div style="grid-area: description;">
+                            <p>A Bukkit plugin that removes blacklisted items from players.</p>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <h3>Wings of Fire: The New World</h3>
+            <div class="video-example">
+                <div
+                    style="display: grid; grid-template-rows: min-content auto; justify-items: center; flex: 1; min-width: 30%; margin-top: 10px; margin-bottom: 10px;">
+                    <p>Wings of Fire: The New World is a hybrid Discord-Minecraft server started in 2016. Throughout its
+                        life, the server has seen four map revisions and has garnered a community of over 1,200 members.
+                        The server's story is set thousands of years following the canon events of Wings of Fire and
+                        boasts a unique cast of characters and an extensive new world full of lore to explore!
+                    </p>
+                    <div class="joinbutton">
+                        <a href="https://discord.gg/faynYq6tFw" target="_blank" class="joinbutton">
+                            <p>Join the Discord</p>
+                        </a>
+                    </div>
+
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gQi7d47fYLU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <header class="minorheader">
+            <h2></h2>
+        </header>
+
+        <div class="maintext">
+
+            <div style="display: flex; align-items: center;">
+                <p>You can DM me on Discord (<i>I don't bite!</i>): stonley890</p>
+                <button id="copyButton" class="copy-icon"></button>
+
+            </div>
+            <p>If you are financially stable (<i>no students</i>), you can <a href="https://ko-fi.com/stonley890">buy me
+                    a coffee</a> to support my projects.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Stonley890. All rights reserved.
+    </footer>
+
+    <script>
+        document.getElementById("copyButton").addEventListener("click", function () {
+            const textToCopy = "stonley890";
+
+            // Create a temporary textarea element
+            const textarea = document.createElement("textarea");
+            textarea.value = textToCopy;
+            document.body.appendChild(textarea);
+
+            // Select and copy the text
+            textarea.select();
+            document.execCommand("copy");
+
+            // Remove the temporary textarea
+            document.body.removeChild(textarea);
+
+            // Provide feedback to the user
+            const copyButton = document.getElementById("copyButton")
+            copyButton.style.background = "center url('checkmark-icon.png')";
+            copyButton.style.backgroundSize = "contain";
+            copyButton.style.backgroundRepeat = "no-repeat";
+
+        });
+    </script>
+</body>
+
+</html>
