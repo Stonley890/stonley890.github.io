@@ -8,12 +8,14 @@
     <title>Stonley890 - Home</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Lexend";
             font-size: larger;
             color: #ffffff;
             margin: 0px;
             background-color: #010514;
-            line-height: 150%
+            line-height: 150%;
+            src: url(https://fonts.gstatic.com/s/lexend/v18/wlpwgwvFAVdoq2_v9KQU4Wc.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
         }
 
         body a:link {
@@ -27,10 +29,6 @@
 
         body a:hover {
             color: #ffffff;
-        }
-
-        body a:active {
-            color: chocolate;
         }
 
         .maintext {
@@ -65,6 +63,11 @@
 
             box-shadow: 0px 0px 5px white;
             background: black;
+        }
+
+        header .textbutton:active {
+            background: linear-gradient(to left, #228285, #1672c2);
+            transition: all 0s;
         }
 
         .minorheader {
@@ -130,7 +133,7 @@
         }
 
         .video-example .user {
-            
+
             display: flex;
             align-items: center;
             gap: 10px;
@@ -146,6 +149,7 @@
             grid-column: 2;
             flex-basis: 1;
             border: 0;
+            border-radius: 10px;
         }
 
         .video-example p {
@@ -161,7 +165,7 @@
         .musiccollection {
             display: flex;
             padding-top: 10px;
-            
+
         }
 
         .musiccollection a {
@@ -179,7 +183,7 @@
             border-radius: 20px;
             width: 80%;
             text-decoration: none;
-            transition: all .3s ease-in-out;
+            transition: all 1s ease-in-out;
         }
 
         .musiccard:hover {
@@ -194,6 +198,11 @@
             -webkit-animation: MovingGradient 2s ease infinite;
             -moz-animation: MovingGradient 2s ease infinite;
             animation: MovingGradient 2s ease infinite;
+        }
+
+        .musiccard:active {
+            background: linear-gradient(to left, #33c2c7, #1a8aec);
+            transition: all 0s;
         }
 
         .musiccard a:hover {
@@ -218,7 +227,7 @@
             background-color: #07142e;
             border-radius: 20px;
             margin-top: 10px;
-            transition: all .3s ease-in-out;
+            transition: all 1s ease-in-out;
         }
 
         .modcard:hover {
@@ -233,6 +242,10 @@
             -webkit-animation: MovingGradient 2s ease infinite;
             -moz-animation: MovingGradient 2s ease infinite;
             animation: MovingGradient 2s ease infinite;
+        }
+
+        .modcard:active {
+            background: linear-gradient(to left, #33c2c7, #1a8aec);
         }
 
         .modcard img {
@@ -267,7 +280,7 @@
             background: linear-gradient(to left, #228285, #1672c2);
             cursor: pointer;
 
-            transition: all .3s ease-in-out;
+            transition: all 1s ease-in-out;
             align-content: center;
         }
 
@@ -299,6 +312,10 @@
             -webkit-animation: MovingGradient 2s ease infinite;
             -moz-animation: MovingGradient 2s ease infinite;
             animation: MovingGradient 2s ease infinite;
+        }
+
+        .textbutton:active {
+            background: linear-gradient(to left, #33c2c7, #1a8aec);
         }
 
         @-webkit-keyframes MovingGradient {
@@ -356,11 +373,17 @@
             .video-example p {
                 min-width: auto;
             }
+
+
         }
 
         @media screen and (max-width: 600px) {
             .subprofile {
                 visibility: hidden;
+            }
+
+            .musiccard p {
+                font-size: medium;
             }
         }
 
@@ -392,7 +415,7 @@
 <body>
     <header>
         <nav>
-            <p style="margin: 0;">This page was last updated 07/27/2023</p>
+            <p style="margin: 0;">This page was last updated 08/04/2023</p>
         </nav>
     </header>
 
@@ -537,13 +560,13 @@
 
         <div class="maintext">
             <h1>Video</h1>
-            <br>
             <div class="video-example">
                 <div style="display: inline;">
 
                     <div class="user">
                         <a href="https://youtube.com/@Stonley890" target="_blank">
-                            <img src="https://avatars.githubusercontent.com/u/79172597?v=4" alt="Stonley890 Profile Image">
+                            <img src="https://avatars.githubusercontent.com/u/79172597?v=4"
+                                alt="Stonley890 Profile Image">
                         </a>
                         <a href="https://youtube.com/@Stonley890" target="_blank">
                             <h3>Stonley890</h3>
@@ -568,7 +591,8 @@
                 <div style="display: inline;">
                     <div class="user">
                         <a href="https://youtube.com/@BogTheMudWing" target="_blank">
-                            <img src="https://yt3.googleusercontent.com/4zWQws5XI8_hNF_NbZE453KN_Pf9A6Gu7877xAWRaoLamG-N60GlvRxKnpMWoTOYYudFLqUR_jU=s176-c-k-c0x00ffffff-no-rj" alt="Bog The MudWing Profile Image">
+                            <img src="https://yt3.googleusercontent.com/4zWQws5XI8_hNF_NbZE453KN_Pf9A6Gu7877xAWRaoLamG-N60GlvRxKnpMWoTOYYudFLqUR_jU=s176-c-k-c0x00ffffff-no-rj"
+                                alt="Bog The MudWing Profile Image">
                         </a>
                         <a href="https://youtube.com/@BogTheMudWing" target="_blank">
                             <h3>BogTheMudWing</h3>
@@ -576,15 +600,16 @@
 
                     </div>
 
-                    <p>Bog The MudWing is a channel focused on the <i>Wings of Fire</i> book series by Tui T. Sutherland. It
+                    <p>Bog The MudWing is a channel focused on the <i>Wings of Fire</i> book series by Tui T.
+                        Sutherland. It
                         hovers more around a combination of <i>Wings of Fire</i> and Minecraft, but is ultimately most
-                        focused on the book series. A large part of the channel is the connection to <i>Wings of Fire: The
+                        focused on the book series. A large part of the channel is the connection to <i>Wings of Fire:
+                            The
                             New World</i>, a Minecraft server based on Wings of Fire that I help administrate.
                     </p>
                 </div>
 
-                
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_g8wGaz8AQU"
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AePdxLuUV2Q"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -594,7 +619,8 @@
                 <div style="display: inline;">
                     <div class="user">
                         <a href="https://youtube.com/@StonleyFX" target="_blank">
-                            <img src="https://yt3.googleusercontent.com/HlGpTQQ1MD-SuC8YYw0NpWJSu8G8BlLYp2RxnxQSEmOiWvL2FZ5l_mZxJ-6Vaq3txzaBF0mjGow=s176-c-k-c0x00ffffff-no-rj" alt="StonleyFX Profile Image">
+                            <img src="https://yt3.googleusercontent.com/HlGpTQQ1MD-SuC8YYw0NpWJSu8G8BlLYp2RxnxQSEmOiWvL2FZ5l_mZxJ-6Vaq3txzaBF0mjGow=s176-c-k-c0x00ffffff-no-rj"
+                                alt="StonleyFX Profile Image">
                         </a>
                         <a href="https://youtube.com/@StonleyFX" target="_blank">
                             <h3>StonleyFX</h3>
@@ -612,7 +638,8 @@
                 <div style="display: inline;">
                     <div class="user">
                         <a href="https://youtube.com/@WaffleIrons" target="_blank">
-                            <img src="https://yt3.googleusercontent.com/GZxr-UB8QYxPNNdOtzqI2cjjpOXOE8lUHHeGzFh0NVVkvdHHEQMiQJpxqM1x5kEyPjXVc_ApHI4=s176-c-k-c0x00ffffff-no-rj" alt="Waffle Irons Profile Image">
+                            <img src="https://yt3.googleusercontent.com/GZxr-UB8QYxPNNdOtzqI2cjjpOXOE8lUHHeGzFh0NVVkvdHHEQMiQJpxqM1x5kEyPjXVc_ApHI4=s176-c-k-c0x00ffffff-no-rj"
+                                alt="Waffle Irons Profile Image">
                         </a>
                         <a href="https://youtube.com/@WaffleIrons" target="_blank">
                             <h3>Waffle Irons Gaming</h3>
@@ -626,7 +653,7 @@
                     </p>
                 </div>
 
-                
+
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f2Av2nDr8WU"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -637,7 +664,8 @@
                 <div style="display: inline;">
                     <div class="user">
                         <a href="https://youtube.com/@WaffleIrons" target="_blank">
-                            <img src="https://yt3.googleusercontent.com/e8QNwBy43A6bj2nrCwOanp2I1FZ-bFxVQmEno9byFs49u6A9lqfAuvWRZzfq1a3HVUBA3wprng=s176-c-k-c0x00ffffff-no-rj" alt="Wings of Fire: The New World Profile Image">
+                            <img src="https://yt3.googleusercontent.com/e8QNwBy43A6bj2nrCwOanp2I1FZ-bFxVQmEno9byFs49u6A9lqfAuvWRZzfq1a3HVUBA3wprng=s176-c-k-c0x00ffffff-no-rj"
+                                alt="Wings of Fire: The New World Profile Image">
                         </a>
                         <a href="https://youtube.com/@WaffleIrons" target="_blank">
                             <h3>Wings of Fire: The New World</h3>
@@ -646,13 +674,14 @@
                     </div>
 
                     <p>The official YouTube channel for the Wings of Fire: The New World Minecraft server. I am an
-                        administrator on this server and much of the content (mostly event trailers) is produced my me. More
+                        administrator on this server and much of the content (mostly event trailers) is produced my me.
+                        More
                         about Wings of Fire: The New World is located below.
                     </p>
                 </div>
 
-                
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iYTKLDFH6u0"
+
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/m3oFmJAB9oY"
                     title="YouTube video player"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowfullscreen></iframe>
@@ -699,6 +728,8 @@
                     </div>
                 </a>
             </div>
+
+            <br>
 
             <h2>Minecraft</h2>
             <p>Minecraft is one of my all-time favorite games. Throughout my time playing the game, I've also gained
@@ -815,7 +846,6 @@
                         Join the Discord
                     </a>
                 </div>
-
 
             </div>
         </div>
