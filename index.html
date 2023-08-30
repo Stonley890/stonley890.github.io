@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stonley890 - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: "Lexend", Arial, Helvetica, sans-serif;
@@ -14,7 +18,6 @@
             margin: 0px;
             background-color: #010514;
             line-height: 150%;
-            src: url(https://fonts.gstatic.com/s/lexend/v18/wlpwgwvFAVdoq2_v9KQU4Wc.woff2) format('woff2');
             unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
         }
 
@@ -158,6 +161,11 @@
             min-width: 30%;
         }
 
+        .video-example div {
+            flex: 1;
+            min-width: 30%;
+        }
+
         .video-example h3 {
             margin: 0px;
         }
@@ -187,7 +195,7 @@
         }
 
         .musiccard:hover {
-            transition: all .3s ease-in-out;
+            transition: all .0s ease-in-out;
             text-shadow: 0px 0px 5px black;
             box-shadow: 0px 0px 5px white;
             color: #ffffff;
@@ -216,10 +224,9 @@
 
         .modcard {
             display: inline-grid;
-            grid-template: "icon title" "icon description";
-            grid-template-areas: "icon title" "icon description";
-            grid-template-columns: min-content auto;
-            grid-template-rows: 20px auto;
+            grid-template-areas: "info download";
+            grid-template-columns: auto min-content;
+            grid-template-rows: auto auto;
             padding: 10px;
             gap: 10px;
             width: calc(100% - 10px);
@@ -228,10 +235,27 @@
             border-radius: 20px;
             margin-top: 10px;
             transition: all 1s ease-in-out;
+            text-decoration: none;
+            height: 100px;
+        }
+
+        .modcard a {
+            display: flex;
+        }
+
+        .modcard .info {
+            grid-area: "info";
+            display: inline-grid;
+            grid-template-areas: "icon title" "icon description";
+            grid-template-columns: min-content auto;
+            grid-template-rows: 20px auto;
+            gap: 10px;
+            text-decoration: none;
+            height: auto;
         }
 
         .modcard:hover {
-            transition: all .3s ease-in-out;
+            transition: all .0s ease-in-out;
             text-shadow: 0px 0px 5px black;
             box-shadow: 0px 0px 5px white;
             color: #ffffff;
@@ -254,7 +278,33 @@
         }
 
         .modcard p {
+            text-decoration: none;
             margin: 0px;
+        }
+
+        .download {
+            transition: all .3s ease-in-out;
+            grid-area: download;
+            align-self: center;
+            justify-self: right;
+            background: #010514;
+            height: 70px;
+            width: 70px;
+            border-radius: 10px;
+            margin-right: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .download svg {
+            height: 45px;
+        }
+
+        .download:hover {
+            transition: all 0s ease-in-out;
+            background: #07142e;
+            box-shadow: 0px 0px 5px white;
         }
 
         .textbutton {
@@ -276,7 +326,7 @@
 
             border-width: 0px;
             border-radius: 10px;
-            height: auto;
+            height: max-content;
             background: linear-gradient(to left, #228285, #1672c2);
             cursor: pointer;
 
@@ -301,7 +351,7 @@
 
         .textbutton:hover {
 
-            transition: all .3s ease-in-out;
+            transition: all .0s ease-in-out;
             text-shadow: 0px 0px 5px black;
             box-shadow: 0px 0px 5px white;
             color: #ffffff;
@@ -415,14 +465,13 @@
 <body>
     <header>
         <nav>
-            <p style="margin: 0;">This page was last updated 08/23/2023</p>
+            <p style="margin: 0;">This page was last updated 08/29/2023</p>
         </nav>
     </header>
 
     <main style="padding: 0;">
         <div class="profile">
-            <a href="https://www.youtube.com/@Stonley890" target="_blank"><img
-                    src="https://avatars.githubusercontent.com/u/79172597?v=4" alt="Main Profile Image"></a>
+            <img src="https://avatars.githubusercontent.com/u/79172597?v=4" alt="Main Profile Image">
             <div class="details">
                 <div class="name">Stonley890</div>
                 <div class="subtext">Bog The MudWing</div>
@@ -726,8 +775,9 @@
                 features extracted from Dreamvisitor. Below are some notable projects.</p>
 
             <div>
-                <a href="https://modrinth.com/datapack/compass-tracker" target="_blank">
-                    <div class="modcard">
+
+                <div class="modcard">
+                    <a href="https://modrinth.com/datapack/compass-tracker" target="_blank" class="info">
                         <div style="grid-area: title;">
                             <p><b>Compass Tracker</b></p>
                         </div>
@@ -740,12 +790,26 @@
                                 three
                                 dimensions.</p>
                         </div>
+                    </a>
 
-                    </div>
-                </a>
+                    <a href="https://modrinth.com/datapack/compass-tracker/versions" target="_blank">
+                        <div class="download">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2"
+                                viewBox="0 0 25 25" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"></path>
+                            </svg>
+                        </div>
+                    </a>
 
-                <a href="https://modrinth.com/plugin/no-creeper-craters" target="_blank">
-                    <div class="modcard">
+
+
+                </div>
+
+
+
+                <div class="modcard">
+                    <a href="https://modrinth.com/plugin/no-creeper-craters" target="_blank" class="info">
                         <div style="grid-area: title;">
                             <p><b>No Creeper Craters</b></p>
                         </div>
@@ -755,12 +819,25 @@
                         <div style="grid-area: description;">
                             <p>A very lightweight plugin that prevents Creepers from breaking blocks.</p>
                         </div>
+                    </a>
 
-                    </div>
-                </a>
+                    <a href="https://modrinth.com/plugin/no-creeper-craters/versions" target="_blank">
+                        <div class="download">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2"
+                                viewBox="0 0 25 25" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"></path>
+                            </svg>
+                        </div>
+                    </a>
 
-                <a href="https://modrinth.com/datapack/toasty" target="_blank">
-                    <div class="modcard">
+
+                </div>
+
+
+
+                <div class="modcard">
+                    <a href="https://modrinth.com/datapack/toasty" target="_blank" class="info">
                         <div style="grid-area: title;">
                             <p><b>Toasty!</b></p>
                         </div>
@@ -771,12 +848,24 @@
                             <p>This data pack adds Toasty, a companion that will follow you throughout the world of
                                 Minecraft!</p>
                         </div>
+                    </a>
 
-                    </div>
-                </a>
+                    <a href="https://modrinth.com/datapack/toasty/versions" target="_blank">
+                        <div class="download">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2"
+                                viewBox="0 0 25 25" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"></path>
+                            </svg>
+                        </div>
+                    </a>
 
-                <a href="https://modrinth.com/plugin/pause-chat" target="_blank">
-                    <div class="modcard">
+                </div>
+
+
+
+                <div class="modcard">
+                    <a href="https://modrinth.com/plugin/pause-chat" target="_blank" class="info">
                         <div style="grid-area: title;">
                             <p><b>Pause Chat</b></p>
                         </div>
@@ -786,12 +875,22 @@
                         <div style="grid-area: description;">
                             <p>A Spigot plugin that temporarily (or permanently) disables Minecraft chat.</p>
                         </div>
+                    </a>
 
-                    </div>
-                </a>
+                    <a href="https://modrinth.com/plugin/pause-chat/versions" target="_blank">
+                        <div class="download">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2"
+                                viewBox="0 0 25 25" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"></path>
+                            </svg>
+                        </div>
+                    </a>
 
-                <a href="https://modrinth.com/plugin/itemvoid" target="_blank">
-                    <div class="modcard">
+                </div>
+
+                <div class="modcard">
+                    <a href="https://modrinth.com/plugin/itemvoid" target="_blank" class="info">
                         <div style="grid-area: title;">
                             <p><b>ItemVoid</b></p>
                         </div>
@@ -801,9 +900,45 @@
                         <div style="grid-area: description;">
                             <p>A Bukkit plugin that removes blacklisted items from players.</p>
                         </div>
+                    </a>
 
-                    </div>
-                </a>
+                    <a href="https://modrinth.com/plugin/itemvoid/versions" target="_blank">
+                        <div class="download">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2"
+                                viewBox="0 0 25 25" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"></path>
+                            </svg>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="modcard">
+                    <a href="https://modrinth.com/datapack/ring-of-fire" target="_blank" class="info">
+                        <div style="grid-area: title;">
+                            <p><b>Ring of Fire</b></p>
+                        </div>
+                        <img src="https://cdn.modrinth.com/data/txTe19i3/a37fd0e22ec821ef92c6aa3018c952a1346ebc43.png"
+                            style="grid-area: icon;">
+
+                        <div style="grid-area: description;">
+                            <p>A simple asymmetrical multiplayer Minecraft minigame for a variable number of players.</p>
+                        </div>
+                    </a>
+
+                    <a href="https://modrinth.com/datapack/ring-of-fire/versions" target="_blank">
+                        <div class="download">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2"
+                                viewBox="0 0 25 25" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4 16v1a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1m-4-4-4 4m0 0-4-4m4 4V4"></path>
+                            </svg>
+                        </div>
+                    </a>
+
+                </div>
+
             </div>
 
             <br>
