@@ -312,6 +312,7 @@ main {
 .modcard img {
     border-radius: 20px;
     width: 100px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .modcard p {
