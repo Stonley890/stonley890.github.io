@@ -94,6 +94,7 @@ header .textbutton:active {
 nav {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 nav a {
@@ -473,6 +474,11 @@ main {
     background: linear-gradient(to left, #33c2c7, #1a8aec);
 }
 
+.woftnw-card {
+    display: inline;
+    grid-column: 1; grid-row: 1;
+}
+
 @-webkit-keyframes MovingGradient {
     0% {
         background-position: 0% 50%
@@ -528,7 +534,16 @@ main {
     .video-example p {
         min-width: auto;
     }
+}
 
+@media screen and (max-width: 950px) {
+    .download {
+        display: none;
+    }
+
+    .modcard {
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -538,6 +553,9 @@ main {
 
     .musiccard p {
         font-size: medium;
+    }
+    .modtitle img {
+        display: none;
     }
 }
 
