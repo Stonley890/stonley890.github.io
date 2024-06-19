@@ -187,12 +187,44 @@ main {
 }
 
 .video-example div {
-    flex: 1;
     min-width: 30%;
 }
 
 .video-example h3 {
     margin: 0px;
+}
+
+.video-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    line-height: 0;
+    height: min-content;
+    overflow-wrap: normal;
+}
+
+.video-links img {
+    border-radius: 0%;
+    height: 19px;
+    width: auto;
+}
+
+.video-links button {
+    background: #1160a5;
+    color: white;
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.video-links button:hover {
+    background: linear-gradient(to left, #228285, #1672c2);
+    background-size: 400% 400%;
+
+    -webkit-animation: MovingGradient 2s ease infinite;
+    -moz-animation: MovingGradient 2s ease infinite;
+    animation: MovingGradient 2s ease infinite;
 }
 
 .musiccollection {
@@ -293,7 +325,7 @@ main {
     display: inline-grid;
     grid-template-areas: "icon title" "icon description";
     grid-template-columns: min-content auto;
-    grid-template-rows: 20px auto;
+    grid-template-rows: 25px auto;
     gap: 10px;
     text-decoration: none;
     height: auto;
@@ -339,6 +371,18 @@ main {
 .modcard p {
     text-decoration: none;
     margin: 0px;
+}
+
+.modtitle {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.modtitle img {
+    height: 100%; width: auto;
 }
 
 .download {
